@@ -1,0 +1,14 @@
+compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
